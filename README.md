@@ -1,20 +1,26 @@
 # 👻 Ghost Theme
 
-Un thème sombre et élégant pour Discord, compatible avec **Vencord** & **BetterDiscord**.  
-Conçu pour une interface plus immersive, minimaliste et cyber-esthétique. Parfait pour ceux qui aiment un style épuré avec une touche sombre. ⚡
+Un thème Discord stylisé, sombre et mystérieux, compatible avec **Vencord** & **BetterDiscord**.  
+**Ghost** transforme ton interface en une expérience cyber-hack minimaliste, avec des touches glitch et un fond ténébreux, parfait pour les amoureux de l'esthétique underground. 🖤💻
 
-> ✨ *Fait avec 💀 par [g0shtj0sh](https://github.com/g0shtj0sh)*
+> ✨ *Créé par [g0shtj0sh](https://github.com/g0shtj0sh) pour une immersion totale dans l'ombre.*
 
 ---
 
-## 🧩 Caractéristiques
+## 🌌 Aperçu
 
-- 🎨 Design sombre et futuriste
-- 💻 Interface modernisée et épurée
-- 🔍 Boutons, menus et champs retravaillés pour plus de lisibilité
-- 🌙 Mode nuit renforcé, parfait pour les longues sessions nocturnes
-- 🚀 Léger et performant
-- ⚙️ Compatible avec les dernières versions de **Vencord** et **BetterDiscord**
+![Ghost Theme Preview](https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/Preview.png)
+
+---
+
+## 🧩 Fonctionnalités
+
+- 🖤 **Ambiance sombre & immersive** : fond noir avec effets glitch, parfait pour les sessions nocturnes
+- 🧠 Interface ultra-minimale : focus total sur le contenu
+- 👹 Image de fond custom inspirée d’un démon glitché
+- 🧪 Compatible **BetterDiscord** & **Vencord**
+- 🎯 Lisibilité optimisée : polices nettes, couleurs équilibrées
+- 💻 Idéal pour les devs, gamers, et fans de dark aesthetic
 
 ---
 
@@ -22,64 +28,56 @@ Conçu pour une interface plus immersive, minimaliste et cyber-esthétique. Parf
 
 ### 🔮 Vencord
 
-1. Ouvre Discord avec **Vencord** installé.
+1. Ouvre Discord avec **Vencord**.
 2. Va dans `Paramètres utilisateur` > `Vencord` > `Themes`.
-3. Clique sur `Ouvrir le dossier des thèmes` (Open Themes Folder).
-4. Télécharge [`Ghost.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost.theme.css).
-5. Glisse le fichier téléchargé dans ce dossier.
-6. Retourne dans Discord et **active le thème** depuis les paramètres des thèmes.
-
-> 💡 *Tu peux aussi suivre la doc officielle de Vencord pour gérer tes thèmes.*
+3. Clique sur `Ouvrir le dossier des thèmes`.
+4. Télécharge [`Ghost.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
+5. Place le fichier `.css` dans le dossier ouvert.
+6. Active le thème depuis les paramètres.
 
 ---
 
 ### 👻 BetterDiscord
 
-1. Télécharge [`Ghost.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost.theme.css).
+1. Télécharge ce fichier CSS : [`Ghost-BetterDiscord.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
 2. Va dans `Paramètres utilisateur` > `BetterDiscord` > `Themes`.
 3. Clique sur `Ouvrir le dossier des thèmes`.
-4. Place le fichier `.css` dans ce dossier.
-5. Active **Ghost Theme** dans la liste des thèmes disponibles.
-
-> ⚠️ *Assure-toi que BetterDiscord est bien installé et à jour.*
+4. Place le fichier dans ce dossier.
+5. Active **Ghost Theme** dans BetterDiscord.
 
 ---
 
-## 📸 Aperçu
+## 🔎 Live Preview
 
-*(Ajoutez ici des captures d’écran du thème en action pour une meilleure visibilité)*  
-Exemple :  
-![Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/main/preview.png)
+Essaye le thème directement ici (fonctionne avec le lien brut) :
 
----
-
-## 📌 Remarques
-
-- Ce thème est encore en développement. N'hésitez pas à signaler des bugs ou à proposer des améliorations via [Issues](https://github.com/g0shtj0sh/Ghost-Th-me/issues).
-- Personnalisation possible en éditant le fichier CSS selon vos préférences.
+[![Live Preview](https://img.shields.io/badge/%F0%9F%91%89%20Preview%20en%20direct-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord-preview.vercel.app/?file=https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/Ghost-BetterDiscord.theme.css)
 
 ---
 
-## 🧠 Contribution
+## 🛠️ Personnalisation
 
-Tu veux contribuer ? Fork le repo, modifie, et soumets une pull request. Toute aide est la bienvenue ! 🙌
+Tu peux changer :
+- L’image de fond (`background-image`)
+- Les couleurs principales (texte, accents)
+- La transparence des panneaux
 
 ---
 
 ## 📄 Licence
 
-[MIT](https://choosealicense.com/licenses/mit/) - Utilisation libre avec mention de l’auteur.
+[MIT](https://choosealicense.com/licenses/mit/) – Tu peux l’utiliser librement, tant que tu mentionnes l’auteur.
 
 ---
 
-## 💬 Contact
+## 🔗 Suivi & Contrib
 
-Si tu veux me suivre ou me contacter :
-- 🐙 GitHub : [g0shtj0sh](https://github.com/g0shtj0sh)
-- 🧵 Discussions ouvertes dans l’onglet *Discussions* du repo !
+- 🐛 Signale un bug ou propose une amélioration via [Issues](https://github.com/g0shtj0sh/Ghost-Th-me/issues)
+- 🍴 Forke le repo et propose une PR
 
 ---
 
-Merci d’utiliser **Ghost Theme**![Preview](https://github.com/user-attachments/assets/aa65dee9-8afb-4a94-9533-39924e3aacde)
- ! 👻  
-*Profite de ton Discord dans un tout nouveau style !*
+## 🙏 Merci
+
+Merci d'utiliser **Ghost Theme** !  
+Plonge ton Discord dans l’ombre... si tu l’oses. 👻💀
