@@ -80,5 +80,6 @@ Si tu veux me suivre ou me contacter :
 
 ---
 
-Merci d’utiliser **Ghost Theme** ! 👻  
+Merci d’utiliser **Ghost Theme**![Preview](https://github.com/user-attachments/assets/aa65dee9-8afb-4a94-9533-39924e3aacde)
+ ! 👻  
 *Profite de ton Discord dans un tout nouveau style !*
