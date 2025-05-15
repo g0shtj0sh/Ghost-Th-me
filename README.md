@@ -1,5 +1,78 @@
 # 👻🗡️ Ghost Ronin ⛩️
 
+> *A lone blade in the dark. Une lame solitaire dans l’ombre.*
+
+---
+
+## 🈴 Overview (EN)
+
+**Ghost Ronin** is a **dark Japanese-inspired Discord theme**, built around wandering souls and silent blades.  
+It transforms your Discord into a spectral dojo — sleek, minimal, shaded in deep black and blood red.
+
+🗡️ Perfect for those who walk the path alone.
+
+> ⚔️ *Crafted by [g0shtj0sh](https://github.com/g0shtj0sh), with the edge of a broken blade.*
+
+---
+
+## 🖼️ Preview
+
+![Ghost Ronin Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
+
+---
+
+## 🧩 Features
+
+- ⛩️ **Feudal Japan-inspired dark aesthetic**
+- 👁️ Minimal layout like a digital dojo
+- 🎴 Palette: shadow black, blood red, worn steel
+- 🌀 Works with **BetterDiscord** & **Vencord**
+- 🏮 Clean fonts, ghostly ambiance
+- 🥷 For devs, gamers, and digital rōnin
+
+---
+
+## 📥 Installation
+
+### 🌀 Vencord
+
+1. Open Discord with **Vencord**.
+2. Go to `User Settings` > `Vencord` > `Themes`.
+3. Click `Open Themes Folder`.
+4. Download [`Ghost.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
+5. Drop the `.css` file into that folder.
+6. Enable the theme.
+
+---
+
+### 🥷 BetterDiscord
+
+1. Download: [`Ghost-BetterDiscord.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
+2. Go to `User Settings` > `BetterDiscord` > `Themes`.
+3. Open the theme folder.
+4. Place the file inside.
+5. Enable **Ghost Ronin**.
+
+---
+
+## ⚙️ Customization
+
+- 🎴 Background image (`background-image`)
+- 🎨 Main colors (red / black / gray)
+- 🫥 Panel opacity
+
+---
+
+## 📜 License
+
+[MIT](https://choosealicense.com/licenses/mit/) — Free to use with credit.
+
+---
+
+---
+
+# 👻🗡️ Ghost Ronin ⛩️
+
 > *Une lame solitaire dans l’ombre. A lone blade in the dark.*
 
 ---
