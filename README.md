@@ -47,14 +47,6 @@ Un thème Discord stylisé, sombre et mystérieux, compatible avec **Vencord** &
 
 ---
 
-## 🔎 Live Preview
-
-Essaye le thème directement ici (fonctionne avec le lien brut) :
-
-[![Live Preview](https://img.shields.io/badge/%F0%9F%91%89%20Preview%20en%20direct-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord-preview.vercel.app/?file=https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/Ghost-BetterDiscord.theme.css)
-
----
-
 ## 🛠️ Personnalisation
 
 Tu peux changer :
