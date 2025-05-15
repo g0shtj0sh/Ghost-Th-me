@@ -1,75 +1,155 @@
-# 👻 Ghost Theme
+# 👻🗡️ Ghost Ronin ⛩️
 
-Un thème Discord stylisé, sombre et mystérieux, compatible avec **Vencord** & **BetterDiscord**.  
-**Ghost** transforme ton interface en une expérience cyber-hack minimaliste, avec des touches glitch et un fond ténébreux, parfait pour les amoureux de l'esthétique underground. 🖤💻
-
-> ✨ *Créé par [g0shtj0sh](https://github.com/g0shtj0sh) pour une immersion totale dans l'ombre.*
+> *Une lame solitaire dans l’ombre. A lone blade in the dark.*
 
 ---
 
-## 🌌 Aperçu
+## 🈴 Présentation (FR)
 
-![Ghost Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
+**Ghost Ronin** est un thème Discord au style **japonais sombre**, inspiré des **samouraïs errants**, des **esprits tourmentés** et des **lames silencieuses**.  
+Il transforme ton interface en un sanctuaire spectral — minimaliste, raffiné, teinté de noir et de rouge sang.
+
+🗡️ Parfait pour ceux qui cherchent la paix dans le chaos, ou l'honneur dans la mort.
+
+> ⚔️ *Forgé par [g0shtj0sh](https://github.com/g0shtj0sh), dans l’ombre d’un sabre brisé.*
+
+---
+
+## 🖼️ Aperçu
+
+![Aperçu Ghost Ronin](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
 
 ---
 
 ## 🧩 Fonctionnalités
 
-- 🖤 **Ambiance sombre & immersive** : fond noir avec effets glitch, parfait pour les sessions nocturnes
-- 🧠 Interface ultra-minimale : focus total sur le contenu
-- 👹 Image de fond custom inspirée d’un démon glitché
-- 🧪 Compatible **BetterDiscord** & **Vencord**
-- 🎯 Lisibilité optimisée : polices nettes, couleurs équilibrées
-- 💻 Idéal pour les devs, gamers, et fans de dark aesthetic
+- ⛩️ **Esthétique japonaise féodale** sombre et immersive
+- 👁️ Interface minimaliste, pensée comme un dojo digital
+- 🎴 Couleurs : noir ténébreux, rouge sang, acier usé
+- 🌀 Compatibilité **BetterDiscord** & **Vencord**
+- 🏮 Polices nettes, ambiance fantomatique
+- 🥷 Idéal pour développeurs, gamers et rōnin modernes
 
 ---
 
 ## 📥 Installation
 
-### 🔮 Vencord
+### 🌀 Vencord
 
-1. Ouvre Discord avec **Vencord**.
+1. Lance Discord avec **Vencord**.
 2. Va dans `Paramètres utilisateur` > `Vencord` > `Themes`.
 3. Clique sur `Ouvrir le dossier des thèmes`.
 4. Télécharge [`Ghost.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
-5. Place le fichier `.css` dans le dossier ouvert.
-6. Active le thème depuis les paramètres.
+5. Place le `.css` dans ce dossier.
+6. Active **Ghost Ronin**.
 
 ---
 
-### 👻 BetterDiscord
+### 🥷 BetterDiscord
 
-1. Télécharge ce fichier CSS : [`Ghost-BetterDiscord.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
+1. Télécharge : [`Ghost-BetterDiscord.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
 2. Va dans `Paramètres utilisateur` > `BetterDiscord` > `Themes`.
-3. Clique sur `Ouvrir le dossier des thèmes`.
-4. Place le fichier dans ce dossier.
-5. Active **Ghost Theme** dans BetterDiscord.
+3. Ouvre le dossier des thèmes.
+4. Glisse le fichier dedans.
+5. Active le thème **Ghost Ronin**.
 
 ---
 
-## 🛠️ Personnalisation
+## ⚙️ Personnalisation
 
-Tu peux changer :
-- L’image de fond (`background-image`)
-- Les couleurs principales (texte, accents)
-- La transparence des panneaux
-
----
-
-## 📄 Licence
-
-[MIT](https://choosealicense.com/licenses/mit/) – Tu peux l’utiliser librement, tant que tu mentionnes l’auteur.
+- 🎴 Image de fond (`background-image`)
+- 🎨 Palette (rouge / noir / gris)
+- 🫥 Opacité des panneaux
 
 ---
 
-## 🔗 Suivi & Contrib
+## 📜 Licence
 
-- 🐛 Signale un bug ou propose une amélioration via [Issues](https://github.com/g0shtj0sh/Ghost-Th-me/issues)
-- 🍴 Forke le repo et propose une PR
+[MIT](https://choosealicense.com/licenses/mit/) — Utilisation libre avec attribution.
 
 ---
 
-## 🙏 Merci
+## 🙏 Remerciements
 
-Merci d'utiliser **Ghost Theme** !  
-Plonge ton Discord dans l’ombre... si tu l’oses. 👻💀
+Merci d'utiliser **Ghost Ronin**.  
+Avance sans bruit. Frappe depuis l’ombre. Disparais dans la légende.
+
+---
+
+---
+
+# 👻🗡️ Ghost Ronin ⛩️
+
+> *A lone blade in the dark. Une lame solitaire dans l’ombre.*
+
+---
+
+## 🈴 Overview (EN)
+
+**Ghost Ronin** is a **dark Japanese-inspired Discord theme**, built around wandering souls and silent blades.  
+It transforms your Discord into a spectral dojo — sleek, minimal, shaded in deep black and blood red.
+
+🗡️ Perfect for those who walk the path alone.
+
+> ⚔️ *Crafted by [g0shtj0sh](https://github.com/g0shtj0sh), with the edge of a broken blade.*
+
+---
+
+## 🖼️ Preview
+
+![Ghost Ronin Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
+
+---
+
+## 🧩 Features
+
+- ⛩️ **Feudal Japan-inspired dark aesthetic**
+- 👁️ Minimal layout like a digital dojo
+- 🎴 Palette: shadow black, blood red, worn steel
+- 🌀 Works with **BetterDiscord** & **Vencord**
+- 🏮 Clean fonts, ghostly ambiance
+- 🥷 For devs, gamers, and digital rōnin
+
+---
+
+## 📥 Installation
+
+### 🌀 Vencord
+
+1. Open Discord with **Vencord**.
+2. Go to `User Settings` > `Vencord` > `Themes`.
+3. Click `Open Themes Folder`.
+4. Download [`Ghost.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
+5. Drop the `.css` file into that folder.
+6. Enable the theme.
+
+---
+
+### 🥷 BetterDiscord
+
+1. Download: [`Ghost-BetterDiscord.theme.css`](https://github.com/g0shtj0sh/Ghost-Th-me/raw/main/Ghost-BetterDiscord.theme.css).
+2. Go to `User Settings` > `BetterDiscord` > `Themes`.
+3. Open the theme folder.
+4. Place the file inside.
+5. Enable **Ghost Ronin**.
+
+---
+
+## ⚙️ Customization
+
+- 🎴 Background image (`background-image`)
+- 🎨 Main colors (red / black / gray)
+- 🫥 Panel opacity
+
+---
+
+## 📜 License
+
+[MIT](https://choosealicense.com/licenses/mit/) — Free to use with credit.
+
+---
+
+## 🙏 Thanks
+
+Thank you for using **Ghost Ronin**.  
+Walk silent. Strike from the shadows. Fade into legend.
