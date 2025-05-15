@@ -9,8 +9,8 @@ Un thème Discord stylisé, sombre et mystérieux, compatible avec **Vencord** &
 
 ## 🌌 Aperçu
 
-![Ghost Theme Preview]([https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/Preview.png](https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/Preview.png
-)
+![Ghost Theme Preview]([[https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/Preview.png](https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/Preview.png
+](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png))
 
 ---
 
