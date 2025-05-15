@@ -1,7 +1,7 @@
 # 👻 Ghost Theme
 
-Un thème sombre, élégant et mystérieux pour Discord, compatible avec **Vencord** & **BetterDiscord**.  
-Conçu pour une interface plus immersive, minimaliste et cyber-esthétique. Parfait pour ceux qui aiment un style épuré avec une touche futuriste. ⚡
+Un thème sombre et élégant pour Discord, compatible avec **Vencord** & **BetterDiscord**.  
+Conçu pour une interface plus immersive, minimaliste et cyber-esthétique. Parfait pour ceux qui aiment un style épuré avec une touche sombre. ⚡
 
 > ✨ *Fait avec 💀 par [g0shtj0sh](https://github.com/g0shtj0sh)*
 
