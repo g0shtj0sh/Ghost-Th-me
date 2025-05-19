@@ -43,7 +43,7 @@ body {
     /* dms button icon options */
     --dms-icon: on; /* set to default to use discord icon, on to use custom icon, off to disable completely */
     --dms-icon-svg-url: url('https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/refs/heads/main/logo.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 80%; /* Ajuster la taille du logo */
+    --dms-icon-svg-size: 90%; /* Ajuster la taille du logo (légèrement plus grand) */
     --dms-icon-color-before: var(--white); /* Couleur du logo par défaut (blanc) */
     --dms-icon-color-after: var(--text-4); /* Couleur du logo au survol/sélection (gris) */
 
@@ -1195,26 +1195,25 @@ body {
         height: 100%; /* Remplir le conteneur parent */
         background: transparent; /* Pas de fond par défaut */
         mask-image: var(--dms-icon-svg-url);
-        mask-size: var(--dms-icon-svg-size);
+        mask-size: var(--dms-icon-svg-size); /* Taille du masque contrôlée par la variable */
         mask-position: center;
         mask-repeat: no-repeat;
         background-color: var(--dms-icon-color-before); /* Couleur du logo par défaut */
-        transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition), background 0.15s ease-out; /* Ajouter transition pour background */
+        transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition); /* Transitions */
         transform: rotate(0deg) scale(1); /* Transformation par défaut (taille normale) */
     }
-    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
-        /* transformation d'animation originale */
-    }
+    
+    /* Règle pour le survol et la sélection */
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
         background: var(--dms-background-color); /* Fond bleu au survol/sélection */
         background-color: var(--dms-icon-color-after); /* Couleur du logo gris au survol/sélection */
-        transform: rotate(-360deg) scale(0.8); /* Transformation d'animation avec réduction de taille */
+        transform: rotate(-360deg) scale(0.8); /* Transformation d'animation */
     }
 
     @container body style(--animations: on) {
         .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
-            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition); /* Conserver transition d'origine pour animations */
+            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition), background 0.15s ease-out; /* Ajouter transition pour background */
         }
     }
 }
