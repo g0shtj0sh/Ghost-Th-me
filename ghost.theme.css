@@ -35,7 +35,7 @@ body {
 
     /* dms button icon options */
     --dms-icon: on; /* set to default to use discord icon, on to use custom icon, off to disable completely */
-    --dms-icon-svg-url: url('https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/logo.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-url: url('https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/refs/heads/main/logo.svg'); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 120%; /* size of the svg (css mask-size) */
     --dms-icon-color-before: var(--white); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
