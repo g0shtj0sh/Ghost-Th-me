@@ -1119,8 +1119,8 @@ body {
 
 body {
     --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size) */
-    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-svg-size: 100%; /* size of the svg (css mask-size) */
+    --dms-icon-color-before: var(--white);
     --dms-icon-color-after: var(--white);
     --dms-background-image-url: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png');
     --dms-background-image-size: cover; /* size of the background image (css background-size) */
