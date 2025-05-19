@@ -43,15 +43,15 @@ body {
     /* dms button icon options */
     --dms-icon: on; /* set to default to use discord icon, on to use custom icon, off to disable completely */
     --dms-icon-svg-url: url('https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/refs/heads/main/logo.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 100%; /* size of the svg (css mask-size) */
-    --dms-icon-color-before: var(--white); /* normal icon color */
-    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --dms-icon-svg-size: 80%; /* Ajuster la taille du logo */
+    --dms-icon-color-before: var(--white); /* Couleur du logo par défaut (blanc) */
+    --dms-icon-color-after: var(--text-4); /* Couleur du logo au survol/sélection (gris) */
 
-    /* dms background options */
+    /* dms button background options */
     --dms-background: on; /* off to disable, image to use a background image, color to use a custom color/gradient */
-    --dms-background-image-url: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png');
+    --dms-background-image-url: url('https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/refs/heads/main/assets/logos/exports/1544x1544_circle.png'); /* url of the background image */
     --dms-background-image-size: cover; /* size of the background image (css background-size) */
-    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* color of the background image (css background) */
+    --dms-background-color: var(--blue-2); /* Couleur du fond au survol/sélection (bleu) */
 
     /* background image options */
     --background-image: on; /* turn on to use a background image */
@@ -556,12 +556,12 @@ body {
     /* background and dark colors */
     --bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
     --bg-2: hsl(220, 15%, 16%); /* dark buttons */
-    --bg-3: hsl(220, 15%, 13%); /* spacing, secondary elements */
-    --bg-4: hsl(220, 15%, 10%); /* main background color */
-    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
-    --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
-    --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
-    --message-hover: hsla(230, 0%, 0%, 0.1); /* messages when hovered */
+    --bg-3: #0c0c11; /* spacing, secondary elements */
+    --bg-4: #07070a6b; /* main background color */
+    --hover: hsla(227, 24%, 27%, 0.125); /* channels and buttons when hovered */
+    --active: hsla(225, 26%, 21%, 0.267); /* channels and buttons when clicked or selected */
+    --active-2: hsla(226, 25%, 28%, 0.333); /* extra state for transparent buttons */
+    --message-hover: hsla(225, 0%, 0%, 0.1); /* messages when hovered */
 
     /* accent colors */
     --accent-1: var(--blue-1); /* links and other accent text */
@@ -569,9 +569,9 @@ body {
     --accent-3: var(--blue-3); /* accent buttons */
     --accent-4: var(--blue-4); /* accent buttons when hovered */
     --accent-5: var(--blue-5); /* accent buttons when clicked */
-    --accent-new: var(--blue-2); /* stuff that's normally red like mute/deafen buttons */
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
+    --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
 
@@ -583,40 +583,40 @@ body {
     --offline: var(--text-4); /* change to #83838b for default offline color */
 
     /* border colors */
-    --border-light: hsl(230, 20%, 40%, 0.1); /* light border color */
-    --border: hsl(230, 20%, 40%, 0.2); /* normal border color */
-    --button-border: hsl(0, 0%, 100%, 0.1); /* neutral border color of buttons */
+    --border-light: hsl(225, 0%, 0%, 0.2); /* light border color */
+    --border: hsl(225, 0%, 0%, 0.3); /* normal border color */
+    --button-border: hsl(225, 0%, 0%, 0); /* neutral border color of buttons */
 
     /* base colors */
-    --red-1: oklch(76% 0.12 0);
-    --red-2: oklch(70% 0.12 0);
-    --red-3: oklch(64% 0.12 0);
-    --red-4: oklch(58% 0.12 0);
-    --red-5: oklch(52% 0.12 0);
+    --red-1: hsl(0, 79%, 58%);
+    --red-2: hsl(0, 78%, 56%);
+    --red-3: hsl(0, 74%, 56%);
+    --red-4: hsl(0, 72%, 55%);
+    --red-5: hsl(0, 60%, 50%);
 
-    --green-1: oklch(76% 0.11 170);
-    --green-2: oklch(70% 0.11 170);
-    --green-3: oklch(64% 0.11 170);
-    --green-4: oklch(58% 0.11 170);
-    --green-5: oklch(52% 0.11 160);
+    --green-1: hsl(106, 58%, 41%);
+    --green-2: hsl(120, 61%, 43%);
+    --green-3: hsl(113, 66%, 40%);
+    --green-4: hsl(108, 59%, 42%);
+    --green-5: hsl(113, 52%, 38%);
 
-    --blue-1: oklch(76% 0.1 215);
-    --blue-2: oklch(70% 0.1 215);
-    --blue-3: oklch(64% 0.1 215);
-    --blue-4: oklch(58% 0.1 215);
-    --blue-5: oklch(52% 0.1 215);
+    --blue-1: hsl(221, 88%, 62%);
+    --blue-2: hsl(221, 58%, 37%);
+    --blue-3: hsl(221, 75%, 58%);
+    --blue-4: hsl(221, 69%, 56%);
+    --blue-5: hsl(221, 58%, 50%);
 
-    --yellow-1: oklch(80% 0.11 90);
-    --yellow-2: oklch(74% 0.11 90);
-    --yellow-3: oklch(68% 0.11 90);
-    --yellow-4: oklch(62% 0.11 90);
-    --yellow-5: oklch(56% 0.11 90);
+    --yellow-1: hsl(36, 80%, 61%);
+    --yellow-2: hsl(36, 63%, 56%);
+    --yellow-3: hsl(36, 64%, 55%);
+    --yellow-4: hsl(36, 53%, 52%);
+    --yellow-5: hsl(36, 51%, 45%);
 
-    --purple-1: oklch(76% 0.11 310);
-    --purple-2: oklch(70% 0.11 310);
-    --purple-3: oklch(64% 0.11 310);
-    --purple-4: oklch(58% 0.11 310);
-    --purple-5: oklch(52% 0.11 310);
+    --purple-1: hsl(261, 78%, 67%);
+    --purple-2: hsl(261, 78%, 67%);
+    --purple-3: hsl(261, 72%, 62%);
+    --purple-4: hsl(261, 64%, 60%);
+    --purple-5: hsl(261, 53%, 55%);
 }
 
 @container root style(--colors: on) {
@@ -1191,24 +1191,30 @@ body {
         content: '';
         display: block;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        background: var(--dms-icon-color-before);
+        width: 100%; /* Remplir le conteneur parent */
+        height: 100%; /* Remplir le conteneur parent */
+        background: transparent; /* Pas de fond par défaut */
         mask-image: var(--dms-icon-svg-url);
         mask-size: var(--dms-icon-svg-size);
         mask-position: center;
         mask-repeat: no-repeat;
-        transition: background-color 0.15s ease-out;
+        background-color: var(--dms-icon-color-before); /* Couleur du logo par défaut */
+        transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition), background 0.15s ease-out; /* Ajouter transition pour background */
+        transform: rotate(0deg) scale(1); /* Transformation par défaut (taille normale) */
+    }
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
+        /* transformation d'animation originale */
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
-        background: var(--dms-icon-color-after);
-        transform: rotate(-360deg);
+        background: var(--dms-background-color); /* Fond bleu au survol/sélection */
+        background-color: var(--dms-icon-color-after); /* Couleur du logo gris au survol/sélection */
+        transform: rotate(-360deg) scale(0.8); /* Transformation d'animation avec réduction de taille */
     }
 
     @container body style(--animations: on) {
         .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
-            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition);
+            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition); /* Conserver transition d'origine pour animations */
         }
     }
 }

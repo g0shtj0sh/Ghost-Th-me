@@ -1119,12 +1119,12 @@ body {
 
 body {
     --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 100%; /* size of the svg (css mask-size) */
-    --dms-icon-color-before: var(--white);
-    --dms-icon-color-after: var(--white);
+    --dms-icon-svg-size: 80%; /* Ajuster la taille du logo */
+    --dms-icon-color-before: var(--white); /* Couleur du logo par défaut (blanc) */
+    --dms-icon-color-after: var(--text-4); /* Couleur du logo au survol/sélection (gris) */
     --dms-background-image-url: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png');
     --dms-background-image-size: cover; /* size of the background image (css background-size) */
-    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* color of the background image (css background) */
+    --dms-background-color: var(--blue-2); /* Couleur du fond au survol/sélection (bleu) */
 }
 
 @container body style(--dms-icon: on) {
@@ -1135,24 +1135,30 @@ body {
         content: '';
         display: block;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        background: var(--dms-icon-color-before);
+        width: 100%; /* Remplir le conteneur parent */
+        height: 100%; /* Remplir le conteneur parent */
+        background: transparent; /* Pas de fond par défaut */
         mask-image: var(--dms-icon-svg-url);
         mask-size: var(--dms-icon-svg-size);
         mask-position: center;
         mask-repeat: no-repeat;
-        transition: background-color 0.15s ease-out;
+        background-color: var(--dms-icon-color-before); /* Couleur du logo par défaut */
+        transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition), background 0.15s ease-out; /* Ajouter transition pour background */
+        transform: rotate(0deg) scale(1); /* Transformation par défaut (taille normale) */
+    }
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
+        /* transformation d'animation originale */
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
-        background: var(--dms-icon-color-after);
-        transform: rotate(-360deg);
+        background: var(--dms-background-color); /* Fond bleu au survol/sélection */
+        background-color: var(--dms-icon-color-after); /* Couleur du logo gris au survol/sélection */
+        transform: rotate(-360deg) scale(0.8); /* Transformation d'animation avec réduction de taille */
     }
 
     @container body style(--animations: on) {
         .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
-            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition);
+            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition); /* Conserver transition d'origine pour animations */
         }
     }
 }
