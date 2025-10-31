@@ -1171,6 +1171,13 @@ body {
     #app-mount {
         --custom-channel-header-height: calc(var(--guildbar-avatar-size) + var(--space-xs) + var(--border-thickness) * 2);
         --top-bar-right-margin: calc(32px + var(--space-xs));
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .visual-refresh .base_c48ade,
+    .visual-refresh .bar_c38106 {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
     }
     .visual-refresh {
         .title_c38106,
@@ -1179,26 +1186,41 @@ body {
         }
         .trailing_c38106 {
             position: absolute;
-            top: calc(var(--top-bar-height) + 8px + var(--border-thickness));
+            top: 0px !important;
             right: calc(var(--gap) + var(--border-thickness));
             gap: var(--space-xs);
             z-index: 1000;
             padding-right: var(--space-xs);
+            padding-top: 0 !important;
+            margin-top: 0 !important;
         }
         .systemBar_c38106 .trailing_c38106 {
-            top: var(--space-xs);
+            top: 0px !important;
         }
         .winButtons_c38106 {
-            padding: 0;
+            padding: 0 !important;
+            padding-top: 0 !important;
+            margin-top: 0 !important;
+            top: 0 !important;
         }
         .winButton_c38106 {
             height: calc(var(--window-control-size) * 2);
+            padding-top: 0 !important;
+            margin-top: 0 !important;
         }
         .winButtons_c38106::before {
             height: 16px;
             width: var(--space-xs);
             box-sizing: border-box;
             margin: 0;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .headerBar__8a7fc,
+        .subtitleContainer_f75fb0,
+        .title_f75fb0 {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
         }
         .toolbar__9293f {
             padding-right: var(--top-bar-right-margin);
@@ -1227,7 +1249,7 @@ body {
         }
     }
     .base_c48ade:has(.notice__6e2b9) > .bar_c38106 > .trailing_c38106 {
-        top: calc(var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness));
+        top: calc(40px + var(--gap) + var(--border-thickness));
     }
     .base_c48ade:has(.winButtons_c38106) {
         --top-bar-right-margin: calc(32px + 3 * var(--space-xs) + 6 * var(--window-control-size));
