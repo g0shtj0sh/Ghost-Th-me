@@ -68,7 +68,7 @@ body {
         margin: var(--gap) 0 0 0;
         overflow: hidden;
         max-width: calc(var(--custom-guild-sidebar-width) + var(--gap) + 4px);
-        background-color: var(--background-base-lower) !important;
+        background-color: var(--bg-3) !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
         opacity: 1 !important;
@@ -1541,8 +1541,8 @@ div[class*="category"] > div {
 [class*="user"][class*="panel"],
 [class*="panels"][aria-label*="User"],
 nav[class*="panels"] {
-    background-color: var(--bg-2) !important;
-    background: var(--bg-2) !important;
+    background-color: var(--bg-3) !important;
+    background: var(--bg-3) !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     opacity: 1 !important;
@@ -1553,8 +1553,8 @@ nav[class*="panels"] {
 [class*="panels"] [class*="status"],
 [class*="panels"] [class*="connection"],
 [class*="panels"] [aria-label*="voice"] {
-    background-color: var(--bg-2) !important;
-    background: var(--bg-2) !important;
+    background-color: var(--bg-3) !important;
+    background: var(--bg-3) !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     opacity: 1 !important;
@@ -1591,13 +1591,13 @@ div[class*="draggable"] {
     isolation: auto !important;
 }
 
-/* Fix spécifique pour la barre utilisateur en bas à gauche - rend complètement opaque */
+/* Fix spécifique pour la barre utilisateur en bas à gauche - rend complètement opaque avec la bonne couleur */
 .panels_c48ade,
 .visual-refresh .panels_c48ade,
 [class*="panels"][class*="container"],
 .visual-refresh [class*="panels"] {
-    background-color: var(--bg-2) !important;
-    background: var(--bg-2) !important;
+    background-color: var(--bg-3) !important;
+    background: var(--bg-3) !important;
     background-image: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
@@ -1654,7 +1654,9 @@ div[class*="draggable"] {
 .visual-refresh .container__2637a [class*="scroller"],
 .visual-refresh .sidebarList_c48ade > [class*="scroller"],
 .visual-refresh .sidebarList_c48ade [class*="scroller"],
-.visual-refresh [data-list-id^="channels"] {
+.visual-refresh [data-list-id^="channels"],
+.visual-refresh .container__2637a > div[class*="scroller"],
+.visual-refresh .container__2637a > div[class*="list"] {
     flex: 1 1 auto !important;
     min-height: 0 !important;
     max-height: none !important;
@@ -1663,6 +1665,17 @@ div[class*="draggable"] {
     overflow-y: auto !important;
     overflow-x: hidden !important;
     height: 100% !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+/* Force le scrollbar à être visible si nécessaire */
+.visual-refresh .container__2637a [class*="scroller"]::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.visual-refresh .container__2637a [class*="scroller"]::-webkit-scrollbar-thumb {
+    background-color: var(--bg-1) !important;
+    border-radius: 4px !important;
 }
 
 /* Assure que tous les éléments scrollables de la liste des canaux fonctionnent */
@@ -1670,12 +1683,16 @@ div[class*="draggable"] {
 .visual-refresh [class*="sidebarList"] [data-list-id],
 .scroller__99e7c,
 [class*="scroller"][class*="channel"],
-[class*="scroller"][aria-label*="channel"] {
+[class*="scroller"][aria-label*="channel"],
+.visual-refresh [data-list-id^="channels"],
+.visual-refresh [data-list-id^="channels"] > [class*="scroller"] {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     overflow-y: auto !important;
     min-height: 0 !important;
     max-height: none !important;
+    height: 100% !important;
+    -webkit-overflow-scrolling: touch !important;
 }
 
 /* Supprime tous les overlays de transparence sur la barre utilisateur */
@@ -1690,12 +1707,12 @@ div[class*="draggable"] {
     background: transparent !important;
 }
 
-/* Fix supplémentaire pour garantir l'opacité complète */
+/* Fix supplémentaire pour garantir l'opacité complète avec la bonne couleur */
 nav[class*="panels"],
 div[class*="panels"][class*="container"],
 .visual-refresh .panels_c48ade {
-    background: var(--bg-2) !important;
-    background-color: var(--bg-2) !important;
+    background: var(--bg-3) !important;
+    background-color: var(--bg-3) !important;
     background-image: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
