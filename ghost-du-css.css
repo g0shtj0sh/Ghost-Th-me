@@ -72,10 +72,16 @@ body {
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
         opacity: 1 !important;
+        flex: 0 0 auto !important;
+        min-height: 0 !important;
     }
 
     .sidebar_c48ade /* server list + channel list + user panel group */ {
         margin: 0 0 var(--gap) var(--gap);
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+        min-height: 0 !important;
     }
 
     .guilds_c48ade /* server list */ {
@@ -1608,16 +1614,68 @@ div[class*="draggable"] {
     background-color: transparent !important;
 }
 
-/* S'assure que la liste des canaux peut scroller jusqu'en bas */
-.container__2637a,
-.sidebarList_c48ade,
-[class*="sidebarList"],
-[data-list-id^="channels"],
-.scroller__99e7c,
-[class*="scroller"][class*="channel"] {
+/* Fix complet pour permettre le scroll complet de la liste des canaux */
+/* Structure: sidebar_c48ade > sidebarList_c48ade > container__2637a > scroller */
+
+/* S'assure que sidebar_c48ade (contenant channels + user panel) utilise flexbox */
+.visual-refresh .sidebar_c48ade {
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 0 !important;
+}
+
+/* Force la liste des canaux à utiliser flexbox et prendre l'espace disponible */
+.visual-refresh .sidebarList_c48ade {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+}
+
+/* Conteneur interne de la liste des canaux - doit pouvoir scroller */
+.visual-refresh .container__2637a {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+/* Le scroller interne doit pouvoir scroller complètement */
+.visual-refresh .container__2637a > [class*="scroller"],
+.visual-refresh .container__2637a [class*="scroller"],
+.visual-refresh .sidebarList_c48ade > [class*="scroller"],
+.visual-refresh .sidebarList_c48ade [class*="scroller"],
+.visual-refresh [data-list-id^="channels"] {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: 100% !important;
+}
+
+/* Assure que tous les éléments scrollables de la liste des canaux fonctionnent */
+.visual-refresh [class*="sidebarList"] [class*="scroller"],
+.visual-refresh [class*="sidebarList"] [data-list-id],
+.scroller__99e7c,
+[class*="scroller"][class*="channel"],
+[class*="scroller"][aria-label*="channel"] {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    overflow-y: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
 }
 
 /* Supprime tous les overlays de transparence sur la barre utilisateur */
