@@ -1049,7 +1049,7 @@ body {
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
         background: var(--dms-icon-color-after);
-        transform: rotate(-360deg) scale(0.8);
+        transform: rotate(-360deg) scale(1);
     }
 
     @container body style(--animations: on) {
