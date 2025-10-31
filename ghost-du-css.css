@@ -78,6 +78,49 @@ body {
         opacity: 1 !important;
     }
 
+    /* Force tous les éléments internes du panel utilisateur à utiliser --bg-3 */
+    .panels__5e434 > *,
+    .panels__5e434 [class*="container"],
+    .panels__5e434 [class*="wrapper"],
+    .panels__5e434 [class*="flex"],
+    .panels__5e434 [class*="item"],
+    .panels__5e434 [class*="button"],
+    .panels__5e434 [class*="buttonContainer"],
+    .panels__5e434 [class*="buttonWrapper"],
+    .panels__5e434 [class*="activity"],
+    .panels__5e434 [class*="profile"],
+    .panels__5e434 [class*="username"],
+    .panels__5e434 [class*="name"],
+    .panels__5e434 [class*="customStatus"],
+    .panels__5e434 [class*="subtext"],
+    .panels__5e434 [class*="panel"],
+    .panels__5e434 [class*="actions"],
+    .panels__5e434 [class*="avatar"],
+    .panels__5e434 [class*="nameTag"],
+    .panels__5e434 [class*="info"],
+    .panels__5e434 [class*="badge"],
+    .panels__5e434 [class*="status"],
+    .panels__5e434 [class*="connection"],
+    .panels__5e434 [class*="voice"],
+    .panels__5e434 [class*="listening"],
+    .panels__5e434 [class*="spotify"],
+    .panels__5e434 [class*="activityPanel"],
+    .panels__5e434 [class*="activityPanelText"],
+    .panels__5e434 [class*="activityPanelBody"],
+    .panels__5e434 [class*="activityPanelButton"],
+    .panels__5e434 [class*="activityPanelBar"],
+    .panels__5e434 [class*="activityPanelIcon"],
+    .panels__5e434 [class*="activityPanelTitle"],
+    .panels__5e434 [class*="activityPanelContent"],
+    .panels__5e434 [class*="activityPanelDescription"],
+    .panels__5e434 [class*="activityPanelDetails"],
+    .panels__5e434 > div,
+    .panels__5e434 > div > div,
+    .panels__5e434 > div > div > div {
+        background-color: var(--bg-3) !important;
+        background: var(--bg-3) !important;
+    }
+
     .sidebar__5e434 /* server list + channel list + user panel group */ {
         margin: 0 var(--gap) var(--gap) var(--gap);
     }
@@ -179,6 +222,8 @@ body {
 
     .listeningAlong_e0cf27 /* user panel listening along */ {
         border-top: none !important;
+        background-color: var(--bg-3) !important;
+        background: var(--bg-3) !important;
     }
 
     .container_c8ffbb /* member list */ {

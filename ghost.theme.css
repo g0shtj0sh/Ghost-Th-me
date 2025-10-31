@@ -230,6 +230,73 @@ nav[class*="panels"] {
 /* Force l'opacité complète pour tous les panels */
 [class*="panels"] {
     opacity: 1 !important;
+    background-color: var(--bg-3) !important;
+    background: var(--bg-3) !important;
+}
+
+/* Force tous les éléments internes du panel utilisateur à utiliser --bg-3 */
+[class*="panels"] > *,
+[class*="panels"] [class*="container"],
+[class*="panels"] [class*="wrapper"],
+[class*="panels"] [class*="flex"],
+[class*="panels"] [class*="item"],
+[class*="panels"] [class*="button"],
+[class*="panels"] [class*="buttonContainer"],
+[class*="panels"] [class*="buttonWrapper"],
+[class*="panels"] [class*="activity"],
+[class*="panels"] [class*="profile"],
+[class*="panels"] [class*="username"],
+[class*="panels"] [class*="name"],
+[class*="panels"] [class*="customStatus"],
+[class*="panels"] [class*="subtext"],
+[class*="panels"] [class*="panel"],
+[class*="panels"] [class*="actions"],
+[class*="panels"] [class*="avatar"],
+[class*="panels"] [class*="nameTag"],
+[class*="panels"] [class*="info"],
+[class*="panels"] [class*="badge"],
+[class*="panels"] [class*="status"],
+[class*="panels"] [class*="connection"],
+[class*="panels"] [class*="voice"],
+[class*="panels"] [class*="listening"],
+[class*="panels"] [class*="spotify"],
+[class*="panels"] [class*="activityPanel"],
+[class*="panels"] [class*="activityPanelText"],
+[class*="panels"] [class*="activityPanelBody"],
+[class*="panels"] [class*="activityPanelButton"],
+[class*="panels"] [class*="activityPanelBar"],
+[class*="panels"] [class*="activityPanelIcon"],
+[class*="panels"] [class*="activityPanelTitle"],
+[class*="panels"] [class*="activityPanelContent"],
+[class*="panels"] [class*="activityPanelDescription"],
+[class*="panels"] [class*="activityPanelDetails"],
+div[class*="panels"] > div,
+div[class*="panels"] > div > div,
+div[class*="panels"] > div > div > div {
+    background-color: var(--bg-3) !important;
+    background: var(--bg-3) !important;
+}
+
+/* Cible spécifiquement les zones de connexion vocale et de profil */
+[class*="listeningAlong"],
+[class*="voiceBar"],
+[class*="activityPanel"],
+[class*="panels"] [class*="connectionContainer"],
+[class*="panels"] [class*="connectionStatus"],
+[class*="panels"] [class*="connectionInfo"],
+[class*="panels"] [class*="userInfo"],
+[class*="panels"] [class*="userPanel"],
+[class*="panels"] [class*="userArea"],
+[class*="panels"] [class*="avatarWrapper"],
+[class*="panels"] [class*="nameWrapper"],
+[class*="panels"] [class*="badgeWrapper"],
+[class*="panels"] [class*="statusWrapper"],
+[class*="panels"] [class*="buttonGroup"],
+[class*="panels"] [class*="buttonRow"] {
+    background-color: var(--bg-3) !important;
+    background: var(--bg-3) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
 }
 
 /* Assure que les éléments interactifs fonctionnent correctement */
