@@ -1535,24 +1535,124 @@ div[class*="category"] > div {
     cursor: grabbing !important;
 }
 
-/* Correction de la transparence de la barre utilisateur en bas */
-/* Panels utilisateur - barre en bas */
+/* ============================================================================
+   SECTION COMPLÈTE : LISTE DES CANAUX ET BARRE UTILISATEUR
+   Refait de A à Z pour corriger le scroll et la transparence
+   ============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. STRUCTURE PRINCIPALE - Sidebar avec liste des canaux et barre utilisateur
+   ---------------------------------------------------------------------------- */
+.visual-refresh .sidebar_c48ade {
+    /* Structure flexbox pour gérer sidebarList + userPanel */
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    margin: 0 0 var(--gap) var(--gap) !important;
+}
+
+/* ----------------------------------------------------------------------------
+   2. LISTE DES CANAUX - Doit pouvoir scroller complètement
+   ---------------------------------------------------------------------------- */
+.visual-refresh .sidebarList_c48ade {
+    /* Prend tout l'espace disponible sauf celui de la barre utilisateur */
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+}
+
+/* Conteneur interne de la liste des canaux */
+.visual-refresh .container__2637a {
+    /* Structure flexbox interne */
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+/* Le vrai élément scrollable - celui qui contient les canaux */
+.visual-refresh .container__2637a > div[class*="scroller"],
+.visual-refresh .container__2637a [class*="scroller"],
+.visual-refresh .sidebarList_c48ade [class*="scroller"],
+.visual-refresh [data-list-id^="channels"] {
+    /* Propriétés de scroll essentielles */
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: 100% !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+/* Tous les éléments scrollables de la liste des canaux */
+.visual-refresh [class*="sidebarList"] [class*="scroller"],
+.visual-refresh [class*="sidebarList"] [data-list-id],
+.scroller__99e7c,
+[class*="scroller"][class*="channel"],
+[class*="scroller"][aria-label*="channel"],
+.visual-refresh [data-list-id^="channels"] > [class*="scroller"] {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    overflow-y: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    height: 100% !important;
+}
+
+/* Style de la scrollbar */
+.visual-refresh .container__2637a [class*="scroller"]::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.visual-refresh .container__2637a [class*="scroller"]::-webkit-scrollbar-thumb {
+    background-color: var(--bg-1) !important;
+    border-radius: 4px !important;
+}
+
+/* ----------------------------------------------------------------------------
+   3. BARRE UTILISATEUR - Opaque, bonne couleur, ne bloque pas le scroll
+   ---------------------------------------------------------------------------- */
+/* Barre utilisateur principale */
+.visual-refresh .panels_c48ade,
+.panels_c48ade {
+    /* Ne prend que l'espace nécessaire */
+    flex: 0 0 auto !important;
+    min-height: 0 !important;
+    /* Couleur noire du thème */
+    background-color: var(--bg-3) !important;
+    background: var(--bg-3) !important;
+    background-image: none !important;
+    /* Complètement opaque */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    /* Ne bloque pas le scroll */
+    position: static !important;
+    z-index: 1 !important;
+}
+
+/* Tous les variants de la barre utilisateur */
 [class*="panels"][class*="container"],
 [class*="user"][class*="panel"],
 [class*="panels"][aria-label*="User"],
-nav[class*="panels"] {
-    background-color: var(--bg-3) !important;
-    background: var(--bg-3) !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    opacity: 1 !important;
-}
-
-/* Correction spécifique pour la barre de statut vocal */
+nav[class*="panels"],
 [class*="panels"][class*="voice"],
 [class*="panels"] [class*="status"],
-[class*="panels"] [class*="connection"],
-[class*="panels"] [aria-label*="voice"] {
+[class*="panels"] [class*="connection"] {
     background-color: var(--bg-3) !important;
     background: var(--bg-3) !important;
     backdrop-filter: none !important;
@@ -1560,12 +1660,69 @@ nav[class*="panels"] {
     opacity: 1 !important;
 }
 
-/* Force l'opacité complète pour tous les panels */
-[class*="panels"] {
+/* Force tous les éléments de la barre utilisateur à être opaques */
+.panels_c48ade > *,
+.panels_c48ade *,
+[class*="panels"] > *,
+[class*="panels"] * {
     opacity: 1 !important;
 }
 
-/* Assure que les éléments interactifs fonctionnent correctement */
+/* Supprime tous les overlays de transparence */
+.panels_c48ade::before,
+.panels_c48ade::after,
+[class*="panels"]::before,
+[class*="panels"]::after,
+.panels_c48ade > *::before,
+.panels_c48ade > *::after {
+    display: none !important;
+}
+
+/* ----------------------------------------------------------------------------
+   4. FIXES POUR LES INTERACTIONS
+   ---------------------------------------------------------------------------- */
+/* Désactive les effets qui peuvent bloquer les interactions */
+[class*="sidebar"] > div > div > [class*="container"] {
+    pointer-events: auto !important;
+    isolation: auto !important;
+}
+
+/* Force l'interactivité pour les canaux et catégories */
+[class*="container"][class*="channel"],
+[class*="folder"],
+[class*="category"],
+div[data-list-id^="channels"],
+div[data-list-id^="folder"],
+div[class*="sidebar"][class*="channel"] {
+    pointer-events: auto !important;
+    user-select: auto !important;
+    -webkit-user-select: auto !important;
+    touch-action: auto !important;
+}
+
+/* Permet le drag & drop des catégories */
+[data-list-item-id],
+[role="listitem"],
+div[class*="folder"] > div,
+div[class*="category"] > div {
+    pointer-events: auto !important;
+    user-select: none !important;
+    cursor: default !important;
+}
+
+/* Curseur grab pour les catégories déplaçables */
+[class*="folder"][draggable="true"],
+[class*="category"][draggable="true"],
+[class*="drag"] {
+    cursor: grab !important;
+}
+
+[class*="folder"][draggable="true"]:active,
+[class*="category"][draggable="true"]:active {
+    cursor: grabbing !important;
+}
+
+/* Assure que les éléments interactifs fonctionnent */
 button[class*="channel"],
 a[class*="channel"],
 div[class*="clickable"],
@@ -1583,141 +1740,4 @@ div[class*="draggable"] {
     pointer-events: auto !important;
     touch-action: auto !important;
     user-select: none !important;
-}
-
-/* Désactive les effets qui peuvent bloquer les interactions */
-[class*="sidebar"] > div > div > [class*="container"] {
-    pointer-events: auto !important;
-    isolation: auto !important;
-}
-
-/* Fix spécifique pour la barre utilisateur en bas à gauche - rend complètement opaque avec la bonne couleur */
-.panels_c48ade,
-.visual-refresh .panels_c48ade,
-[class*="panels"][class*="container"],
-.visual-refresh [class*="panels"] {
-    background-color: var(--bg-3) !important;
-    background: var(--bg-3) !important;
-    background-image: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    opacity: 1 !important;
-    mix-blend-mode: normal !important;
-}
-
-/* Force tous les éléments de la barre utilisateur à être opaques */
-.panels_c48ade > *,
-.panels_c48ade *,
-[class*="panels"] > *,
-[class*="panels"] * {
-    opacity: 1 !important;
-    background-color: transparent !important;
-}
-
-/* Fix complet pour permettre le scroll complet de la liste des canaux */
-/* Structure: sidebar_c48ade > sidebarList_c48ade > container__2637a > scroller */
-
-/* S'assure que sidebar_c48ade (contenant channels + user panel) utilise flexbox */
-.visual-refresh .sidebar_c48ade {
-    height: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    min-height: 0 !important;
-}
-
-/* Force la liste des canaux à utiliser flexbox et prendre l'espace disponible */
-.visual-refresh .sidebarList_c48ade {
-    flex: 1 1 auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: auto !important;
-}
-
-/* Conteneur interne de la liste des canaux - doit pouvoir scroller */
-.visual-refresh .container__2637a {
-    flex: 1 1 auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    overflow: visible !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-}
-
-/* Le scroller interne doit pouvoir scroller complètement */
-.visual-refresh .container__2637a > [class*="scroller"],
-.visual-refresh .container__2637a [class*="scroller"],
-.visual-refresh .sidebarList_c48ade > [class*="scroller"],
-.visual-refresh .sidebarList_c48ade [class*="scroller"],
-.visual-refresh [data-list-id^="channels"],
-.visual-refresh .container__2637a > div[class*="scroller"],
-.visual-refresh .container__2637a > div[class*="list"] {
-    flex: 1 1 auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    height: 100% !important;
-    -webkit-overflow-scrolling: touch !important;
-}
-
-/* Force le scrollbar à être visible si nécessaire */
-.visual-refresh .container__2637a [class*="scroller"]::-webkit-scrollbar {
-    width: 8px !important;
-}
-
-.visual-refresh .container__2637a [class*="scroller"]::-webkit-scrollbar-thumb {
-    background-color: var(--bg-1) !important;
-    border-radius: 4px !important;
-}
-
-/* Assure que tous les éléments scrollables de la liste des canaux fonctionnent */
-.visual-refresh [class*="sidebarList"] [class*="scroller"],
-.visual-refresh [class*="sidebarList"] [data-list-id],
-.scroller__99e7c,
-[class*="scroller"][class*="channel"],
-[class*="scroller"][aria-label*="channel"],
-.visual-refresh [data-list-id^="channels"],
-.visual-refresh [data-list-id^="channels"] > [class*="scroller"] {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    overflow-y: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    height: 100% !important;
-    -webkit-overflow-scrolling: touch !important;
-}
-
-/* Supprime tous les overlays de transparence sur la barre utilisateur */
-.panels_c48ade::before,
-.panels_c48ade::after,
-[class*="panels"]::before,
-[class*="panels"]::after,
-.panels_c48ade > *::before,
-.panels_c48ade > *::after {
-    display: none !important;
-    opacity: 0 !important;
-    background: transparent !important;
-}
-
-/* Fix supplémentaire pour garantir l'opacité complète avec la bonne couleur */
-nav[class*="panels"],
-div[class*="panels"][class*="container"],
-.visual-refresh .panels_c48ade {
-    background: var(--bg-3) !important;
-    background-color: var(--bg-3) !important;
-    background-image: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    opacity: 1 !important;
-    mix-blend-mode: normal !important;
-    position: relative !important;
-    z-index: 1 !important;
 }
