@@ -101,7 +101,7 @@ body {
     /* background and dark colors */
     --bg-1: hsl(233, 23%, 15%); /* dark buttons when clicked */
     --bg-2: hsl(229, 22%, 14%); /* dark buttons */
-    --bg-3: #0c0c11; /* spacing, secondary elements */
+    --bg-3: #000000; /* spacing, secondary elements - noir pur pour le panel utilisateur */
     --bg-4: #07070a6b; /* main background color */
     --hover: hsla(227, 24%, 27%, 0.125); /* channels and buttons when hovered */
     --active: hsla(225, 26%, 21%, 0.267); /* channels and buttons when clicked or selected */
@@ -275,6 +275,7 @@ div[class*="panels"] > div > div,
 div[class*="panels"] > div > div > div {
     background-color: var(--bg-3) !important;
     background: var(--bg-3) !important;
+    border-radius: 0 !important;
 }
 
 /* Cible spécifiquement les zones de connexion vocale et de profil */
@@ -297,6 +298,7 @@ div[class*="panels"] > div > div > div {
     background: var(--bg-3) !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
+    border-radius: 0 !important;
 }
 
 /* Assure que les éléments interactifs fonctionnent correctement */
