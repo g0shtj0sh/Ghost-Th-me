@@ -22,7 +22,6 @@ body {
     /* panel separation */
     .guilds_c48ade /* server list */, 
     .sidebarList_c48ade /* channel list (includes dm list) */,
-    .panels_c48ade /* user panel */,
     .chat_f75fb0 > .subtitleContainer_f75fb0 /* chat titlebar */,
     .chatContent_f75fb0 /* chat */,
     .container_c8ffbb /* member list */,
@@ -69,6 +68,10 @@ body {
         margin: var(--gap) 0 0 0;
         overflow: hidden;
         max-width: calc(var(--custom-guild-sidebar-width) + var(--gap) + 4px);
+        background-color: var(--background-base-lower) !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        opacity: 1 !important;
     }
 
     .sidebar_c48ade /* server list + channel list + user panel group */ {
@@ -1580,4 +1583,66 @@ div[class*="draggable"] {
 [class*="sidebar"] > div > div > [class*="container"] {
     pointer-events: auto !important;
     isolation: auto !important;
+}
+
+/* Fix spécifique pour la barre utilisateur en bas à gauche - rend complètement opaque */
+.panels_c48ade,
+.visual-refresh .panels_c48ade,
+[class*="panels"][class*="container"],
+.visual-refresh [class*="panels"] {
+    background-color: var(--bg-2) !important;
+    background: var(--bg-2) !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+}
+
+/* Force tous les éléments de la barre utilisateur à être opaques */
+.panels_c48ade > *,
+.panels_c48ade *,
+[class*="panels"] > *,
+[class*="panels"] * {
+    opacity: 1 !important;
+    background-color: transparent !important;
+}
+
+/* S'assure que la liste des canaux peut scroller jusqu'en bas */
+.container__2637a,
+.sidebarList_c48ade,
+[class*="sidebarList"],
+[data-list-id^="channels"],
+.scroller__99e7c,
+[class*="scroller"][class*="channel"] {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    overflow-y: auto !important;
+}
+
+/* Supprime tous les overlays de transparence sur la barre utilisateur */
+.panels_c48ade::before,
+.panels_c48ade::after,
+[class*="panels"]::before,
+[class*="panels"]::after,
+.panels_c48ade > *::before,
+.panels_c48ade > *::after {
+    display: none !important;
+    opacity: 0 !important;
+    background: transparent !important;
+}
+
+/* Fix supplémentaire pour garantir l'opacité complète */
+nav[class*="panels"],
+div[class*="panels"][class*="container"],
+.visual-refresh .panels_c48ade {
+    background: var(--bg-2) !important;
+    background-color: var(--bg-2) !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
