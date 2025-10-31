@@ -1041,7 +1041,7 @@ body {
         mask-size: var(--dms-icon-svg-size);
         mask-position: center;
         mask-repeat: no-repeat;
-        transition: background-color 0.15s ease-out;
+        transition: background-color 0.3s ease;
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
         transform: rotate(0deg) scale(1);
@@ -1054,7 +1054,7 @@ body {
 
     @container body style(--animations: on) {
         .wrapper__6e9f8[data-list-item-id='guildsnav___home'] .childWrapper__6e9f8::before {
-            transition: background-color 0.15s ease-out, transform var(--dms-icon-svg-transition);
+            transition: background-color 0.3s ease, transform var(--dms-icon-svg-transition);
         }
     }
 }

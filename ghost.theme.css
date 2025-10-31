@@ -55,8 +55,8 @@ body {
     --custom-dms-icon: custom; /* off to use discord icon, custom to use custom icon, hide to disable completely */
     --dms-icon-svg-url: url('https://raw.githubusercontent.com/g0shtj0sh/Ghost-Th-me/main/logo.svg'); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 120%; /* size of the svg (css mask-size) */
-    --dms-icon-color-before: var(--white); /* normal icon color */
-    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --dms-icon-color-before: #ffffff; /* normal icon color - blanc par défaut */
+    --dms-icon-color-after: #000000; /* icon color when button is hovered/selected - noir au survol */
 
     /* dms button background options */
     --custom-dms-background: off; /* off to disable, image to use a background image, color to use a custom color/gradient */
