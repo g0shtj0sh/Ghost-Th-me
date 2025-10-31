@@ -1,4 +1,4 @@
-# 👻🗡️ Ghost Ronin ⛩️
+# 👻🗡️ Ghost ⛩️
 
 > *A lone blade in the dark. Une lame solitaire dans l’ombre.*
 
@@ -6,7 +6,7 @@
 
 ## 🈴 Overview (EN)
 
-**Ghost Ronin** is a **dark Japanese-inspired Discord theme**, built around wandering souls and silent blades.  
+**Ghost** is a **dark Japanese-inspired Discord theme**, built around wandering souls and silent blades.  
 It transforms your Discord into a spectral dojo — sleek, minimal, shaded in deep black and blood red.
 
 🗡️ Perfect for those who walk the path alone.
@@ -17,7 +17,7 @@ It transforms your Discord into a spectral dojo — sleek, minimal, shaded in de
 
 ## 🖼️ Preview
 
-![Ghost Ronin Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
+![Ghost Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
 
 ---
 
@@ -71,7 +71,7 @@ It transforms your Discord into a spectral dojo — sleek, minimal, shaded in de
 
 ---
 
-# 👻🗡️ Ghost Ronin ⛩️
+# 👻🗡️ Ghost ⛩️
 
 > *Une lame solitaire dans l’ombre. A lone blade in the dark.*
 
@@ -79,7 +79,7 @@ It transforms your Discord into a spectral dojo — sleek, minimal, shaded in de
 
 ## 🈴 Présentation (FR)
 
-**Ghost Ronin** est un thème Discord au style **japonais sombre**, inspiré des **samouraïs errants**, des **esprits tourmentés** et des **lames silencieuses**.  
+**Ghost** est un thème Discord au style **japonais sombre**, inspiré des **samouraïs errants**, des **esprits tourmentés** et des **lames silencieuses**.  
 Il transforme ton interface en un sanctuaire spectral — minimaliste, raffiné, teinté de noir et de rouge sang.
 
 🗡️ Parfait pour ceux qui cherchent la paix dans le chaos, ou l'honneur dans la mort.
@@ -90,7 +90,7 @@ Il transforme ton interface en un sanctuaire spectral — minimaliste, raffiné,
 
 ## 🖼️ Aperçu
 
-![Aperçu Ghost Ronin](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
+![Aperçu Ghost](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
 
 ---
 
@@ -144,14 +144,14 @@ Il transforme ton interface en un sanctuaire spectral — minimaliste, raffiné,
 
 ## 🙏 Remerciements
 
-Merci d'utiliser **Ghost Ronin**.  
+Merci d'utiliser **Ghost**.  
 Avance sans bruit. Frappe depuis l’ombre. Disparais dans la légende.
 
 ---
 
 ---
 
-# 👻🗡️ Ghost Ronin ⛩️
+# 👻🗡️ Ghost⛩️
 
 > *A lone blade in the dark. Une lame solitaire dans l’ombre.*
 
