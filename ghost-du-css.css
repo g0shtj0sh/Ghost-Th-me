@@ -211,7 +211,7 @@ body {
     }
 
     .sidebarList__5e434 /* channel list */ {
-        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap) * 1.5);
+        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
     }
     .container__2637a /* channel list inner */ {
         padding-bottom: 0;
