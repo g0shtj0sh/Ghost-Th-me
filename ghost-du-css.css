@@ -209,6 +209,36 @@ body {
         margin-top: 0 !important;
         overflow: visible !important;
     }
+    
+    /* Assure que le bouton DMs est bien positionné et rempli */
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8 {
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+    
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 65% !important;
+        height: 65% !important;
+    }
+    
     .folderGroup__48112 {
         width: 100%;
     }
