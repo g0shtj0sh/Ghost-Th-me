@@ -235,12 +235,12 @@ body {
         box-sizing: border-box !important;
     }
     
+    /* Positionnement de base pour l'icône DMs - le transform sera géré dans la section dms-button */
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
         top: 50% !important;
         left: 50% !important;
         width: 65% !important;
         height: 65% !important;
-        transform: translate(-50%, -50%) !important;
     }
     
     .folderGroup__48112 {
@@ -1188,6 +1188,8 @@ body {
         content: '';
         display: block;
         position: absolute;
+        top: 50% !important;
+        left: 50% !important;
         width: 65%;
         height: 65%;
         background: var(--dms-icon-color-before);
@@ -1195,7 +1197,8 @@ body {
         mask-size: var(--dms-icon-svg-size);
         mask-position: center;
         mask-repeat: no-repeat;
-        transition: background-color 0.3s ease;
+        transform: translate(-50%, -50%);
+        transition: background-color 0.3s ease, transform var(--dms-icon-svg-transition);
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
         transform: translate(-50%, -50%) rotate(0deg) scale(1) !important;
