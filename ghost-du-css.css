@@ -89,6 +89,13 @@ body {
             border-color: var(--border-hover) !important;
         }
     }
+    
+    /* Assure un espace au-dessus du panel utilisateur */
+    .sidebar__5e434 {
+        position: relative !important;
+        padding-bottom: calc(var(--gap) * 2) !important;
+        min-height: fit-content !important;
+    }
 
     /* Force tous les éléments internes du panel utilisateur à utiliser --bg-3 */
     .panels__5e434 > *:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
@@ -204,7 +211,7 @@ body {
     }
 
     .sidebarList__5e434 /* channel list */ {
-        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap) * 2);
     }
     .container__2637a /* channel list inner */ {
         padding-bottom: 0;
