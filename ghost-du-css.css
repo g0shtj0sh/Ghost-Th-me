@@ -201,7 +201,13 @@ body {
         width: 100% !important;
     }
     .scroller_ef3116 /* server list inner scroller */ {
-        padding: var(--custom-guild-list-padding) 0;
+        padding: 0 0 var(--custom-guild-list-padding) 0 !important;
+    }
+    
+    /* Assure que l'icône des messages privés est bien en haut */
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] {
+        margin-top: 0 !important;
+        padding-top: var(--custom-guild-list-padding) !important;
     }
     .folderGroup__48112 {
         width: 100%;
