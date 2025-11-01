@@ -17,7 +17,7 @@ It transforms your Discord into a spectral dojo — sleek, minimal, shaded in de
 
 ## 🖼️ Preview
 
-![Ghost Theme Preview]()
+![Ghost Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/6f75b84162a536605a4b992a9e3625963275e98d/Preview.png)
 
 ---
 
