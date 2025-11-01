@@ -233,19 +233,14 @@ body {
         background-repeat: no-repeat !important;
         overflow: hidden !important;
         box-sizing: border-box !important;
-        contain: layout style paint;
-        will-change: transform;
-        backface-visibility: hidden;
     }
     
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
         top: 50% !important;
         left: 50% !important;
-        transform: translate(-50%, -50%) translateZ(0) !important;
         width: 65% !important;
         height: 65% !important;
-        will-change: transform;
-        backface-visibility: hidden;
+        transform: translate(-50%, -50%) !important;
     }
     
     .folderGroup__48112 {
@@ -1203,12 +1198,12 @@ body {
         transition: background-color 0.3s ease;
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
-        transform: rotate(0deg) scale(1);
+        transform: translate(-50%, -50%) rotate(0deg) scale(1) !important;
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
         background: var(--dms-icon-color-after);
-        transform: rotate(-360deg) scale(1);
+        transform: translate(-50%, -50%) rotate(-360deg) scale(1) !important;
     }
 
     @container body style(--animations: on) {
