@@ -72,6 +72,7 @@ body {
         left: 0;
         right: 0;
         width: 100%;
+        margin-top: var(--gap);
         background-color: var(--bg-3) !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
@@ -141,7 +142,7 @@ body {
     }
 
     .guilds__5e434 /* server list */ {
-        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap) * 2);
         margin-right: var(--gap);
     }
     .guilds__5e434 + div:not(.sidebarList__5e434) /* betterfolders */ {
@@ -158,7 +159,7 @@ body {
     }
 
     .sidebarList__5e434 /* channel list */ {
-        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap) * 2);
     }
     .container__2637a /* channel list inner */ {
         padding-bottom: 0;
