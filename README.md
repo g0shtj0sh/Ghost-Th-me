@@ -18,7 +18,7 @@ It transforms your Discord into a spectral dojo — sleek, minimal, shaded in de
 ## 🖼️ Preview
 
 ### Ghost Version
-![Ghost Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/6f75b84162a536605a4b992a9e3625963275e98d/Preview.png)
+![Ghost Theme Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/main/Preview.png)
 
 ### Kara Version (Black Background)
 ![Ghost Kara Version Preview](https://github.com/g0shtj0sh/Ghost-Th-me/blob/main/Preview-Kara.png)
@@ -95,7 +95,7 @@ Il transforme ton interface en un sanctuaire spectral — minimaliste, raffiné,
 ## 🖼️ Aperçu
 
 ### Version Ghost
-![Aperçu Ghost](https://github.com/g0shtj0sh/Ghost-Th-me/blob/6f75b84162a536605a4b992a9e3625963275e98d/Preview.png)
+![Aperçu Ghost](https://github.com/g0shtj0sh/Ghost-Th-me/blob/main/Preview.png)
 
 ### Version Kara (Fond Noir)
 ![Aperçu Ghost Kara](https://github.com/g0shtj0sh/Ghost-Th-me/blob/main/Preview-Kara.png)
