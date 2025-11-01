@@ -70,7 +70,7 @@ body {
     .panels__5e434 /* user panel */ {
         position: absolute !important;
         bottom: var(--gap) !important;
-        left: calc(72px + var(--gap)) !important;
+        left: 0 !important;
         right: var(--gap) !important;
         width: auto !important;
         margin: 0 !important;
