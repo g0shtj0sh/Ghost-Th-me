@@ -68,21 +68,25 @@ body {
     }
 
     .panels__5e434 /* user panel */ {
-        bottom: var(--gap);
-        left: 0;
-        width: 100%;
+        position: absolute !important;
+        bottom: var(--gap) !important;
+        left: var(--gap) !important;
+        right: var(--gap) !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
         background-color: var(--bg-3) !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
         opacity: 1 !important;
         border-radius: var(--radius-lg) !important;
-        border: var(--border-thickness) solid transparent;
-        box-sizing: border-box;
-        transition: border-color var(--border-hover-transition);
-        overflow: visible !important;
+        border: var(--border-thickness) solid transparent !important;
+        box-sizing: border-box !important;
+        transition: border-color var(--border-hover-transition) !important;
+        overflow: hidden !important;
 
         &:hover {
-            border-color: var(--border-hover);
+            border-color: var(--border-hover) !important;
         }
     }
 
@@ -167,7 +171,16 @@ body {
     /* Assure que le premier élément enfant respecte le border-radius du panel */
     .panels__5e434 > div:first-child {
         border-radius: var(--radius-lg) !important;
+        overflow: hidden !important;
     }
+    
+    /* Force la bordure et le border-radius sur tous les niveaux */
+    .panels__5e434,
+    .panels__5e434 > div:first-child,
+    .panels__5e434 > div:first-child > div:first-child {
+        border-radius: var(--radius-lg) !important;
+    }
+    
 
     .sidebar__5e434 /* server list + channel list + user panel group */ {
         margin: 0 var(--gap) var(--gap) var(--gap);
