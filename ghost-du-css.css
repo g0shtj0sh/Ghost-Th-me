@@ -203,6 +203,18 @@ body {
     .scroller_ef3116 /* server list inner scroller */ {
         padding: var(--custom-guild-list-padding) 0;
     }
+    
+    /* Fixe l'icône des messages privés en haut de la liste des serveurs */
+    .wrapper__6e9f8[data-list-item-id='guildsnav___home'] {
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 10 !important;
+        background-color: transparent !important;
+    }
+    
+    .guilds__5e434 .scroller_ef3116 {
+        padding-top: calc(var(--custom-guild-list-padding) + 56px) !important;
+    }
     .folderGroup__48112 {
         width: 100%;
     }
