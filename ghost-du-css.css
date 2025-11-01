@@ -68,7 +68,7 @@ body {
     }
 
     .panels__5e434 /* user panel */ {
-        bottom: calc(var(--gap) + var(--gap));
+        bottom: calc(var(--gap) * 3);
         left: 0;
         right: 0;
         width: 100%;
@@ -141,7 +141,7 @@ body {
     }
 
     .guilds__5e434 /* server list */ {
-        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap) * 3);
         margin-right: var(--gap);
     }
     .guilds__5e434 + div:not(.sidebarList__5e434) /* betterfolders */ {
@@ -158,7 +158,7 @@ body {
     }
 
     .sidebarList__5e434 /* channel list */ {
-        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+        margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap) * 3);
     }
     .container__2637a /* channel list inner */ {
         padding-bottom: 0;
