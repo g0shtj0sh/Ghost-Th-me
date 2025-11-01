@@ -68,9 +68,8 @@ body {
     }
 
     .panels__5e434 /* user panel */ {
-        bottom: var(--gap);
+        bottom: 0;
         left: 0;
-        right: 0;
         width: 100%;
         max-height: 50px !important;
         background-color: var(--bg-3) !important;
