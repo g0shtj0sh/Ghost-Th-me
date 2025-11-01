@@ -68,7 +68,7 @@ body {
     }
 
     .panels__5e434 /* user panel */ {
-        bottom: var(--gap);
+        bottom: calc(var(--gap) + var(--gap));
         left: 0;
         right: 0;
         width: 100%;
