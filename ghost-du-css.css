@@ -68,17 +68,18 @@ body {
     }
 
     .panels__5e434 /* user panel */ {
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        bottom: var(--gap);
+        left: var(--gap);
+        width: calc(100% - var(--gap) * 2);
         background-color: var(--bg-3) !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
         opacity: 1 !important;
-        border-radius: 0 !important;
+        border-radius: var(--radius-lg) !important;
         border: var(--border-thickness) solid var(--border-subtle);
         box-sizing: border-box;
         transition: border-color var(--border-hover-transition);
+        overflow: hidden;
 
         &:hover {
             border-color: var(--border-hover);
@@ -127,6 +128,11 @@ body {
         background-color: var(--bg-3) !important;
         background: var(--bg-3) !important;
         border-radius: 0 !important;
+    }
+    
+    /* Assure que le premier élément enfant respecte le border-radius du panel */
+    .panels__5e434 > div:first-child {
+        border-radius: var(--radius-lg) !important;
     }
 
     .sidebar__5e434 /* server list + channel list + user panel group */ {
