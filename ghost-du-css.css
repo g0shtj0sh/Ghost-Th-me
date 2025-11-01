@@ -70,8 +70,8 @@ body {
     .panels__5e434 /* user panel */ {
         position: absolute !important;
         bottom: var(--gap) !important;
-        left: calc(var(--gap) * -1) !important;
-        right: calc(var(--gap) * -1) !important;
+        left: calc(72px + var(--gap)) !important;
+        right: 0 !important;
         width: auto !important;
         margin: 0 !important;
         padding: 0 !important;
