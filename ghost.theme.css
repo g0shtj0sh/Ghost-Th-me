@@ -251,7 +251,6 @@ nav[class*="panels"] {
 [class*="panels"] [class*="subtext"],
 [class*="panels"] [class*="panel"],
 [class*="panels"] [class*="actions"],
-[class*="panels"] [class*="avatar"],
 [class*="panels"] [class*="nameTag"],
 [class*="panels"] [class*="info"],
 [class*="panels"] [class*="badge"],
@@ -278,6 +277,27 @@ div[class*="panels"] > div > div > div {
     border-radius: 0 !important;
 }
 
+/* Exception pour l'avatar - permet l'affichage de la photo de profil */
+[class*="panels"] [class*="avatar"],
+[class*="panels"] [class*="avatar"] > *,
+[class*="panels"] [class*="avatarWrapper"] > [class*="avatar"],
+[class*="panels"] img[class*="avatar"],
+[class*="panels"] [class*="avatar"] img {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Exception pour la bannière - permet l'affichage normal */
+[class*="panels"] [class*="banner"],
+[class*="panels"] [class*="Banner"],
+[class*="panels"] [class*="background"],
+[class*="panels"] [class*="bannerImage"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+
 /* Cible spécifiquement les zones de connexion vocale et de profil */
 [class*="listeningAlong"],
 [class*="voiceBar"],
@@ -288,7 +308,6 @@ div[class*="panels"] > div > div > div {
 [class*="panels"] [class*="userInfo"],
 [class*="panels"] [class*="userPanel"],
 [class*="panels"] [class*="userArea"],
-[class*="panels"] [class*="avatarWrapper"],
 [class*="panels"] [class*="nameWrapper"],
 [class*="panels"] [class*="badgeWrapper"],
 [class*="panels"] [class*="statusWrapper"],
@@ -299,6 +318,12 @@ div[class*="panels"] > div > div > div {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     border-radius: 0 !important;
+}
+
+/* Exception pour avatarWrapper - permet l'affichage de la photo */
+[class*="panels"] [class*="avatarWrapper"] {
+    background: transparent !important;
+    background-color: transparent !important;
 }
 
 /* Assure que les éléments interactifs fonctionnent correctement */
