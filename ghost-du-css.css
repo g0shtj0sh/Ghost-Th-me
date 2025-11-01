@@ -72,6 +72,7 @@ body {
         left: 0;
         right: 0;
         width: 100%;
+        max-height: 50px !important;
         background-color: var(--bg-3) !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
