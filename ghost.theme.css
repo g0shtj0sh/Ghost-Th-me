@@ -269,9 +269,9 @@ nav[class*="panels"] {
 [class*="panels"] [class*="activityPanelContent"],
 [class*="panels"] [class*="activityPanelDescription"],
 [class*="panels"] [class*="activityPanelDetails"],
-div[class*="panels"] > div,
-div[class*="panels"] > div > div,
-div[class*="panels"] > div > div > div {
+div[class*="panels"] > div:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+div[class*="panels"] > div > div:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+div[class*="panels"] > div > div > div:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]) {
     background-color: var(--bg-3) !important;
     background: var(--bg-3) !important;
     border-radius: 0 !important;
@@ -280,22 +280,36 @@ div[class*="panels"] > div > div > div {
 /* Exception pour l'avatar - permet l'affichage de la photo de profil */
 [class*="panels"] [class*="avatar"],
 [class*="panels"] [class*="avatar"] > *,
-[class*="panels"] [class*="avatarWrapper"] > [class*="avatar"],
+[class*="panels"] [class*="avatarWrapper"],
+[class*="panels"] [class*="avatarWrapper"] > *,
+[class*="panels"] [class*="avatarWrapper"] [class*="avatar"],
 [class*="panels"] img[class*="avatar"],
-[class*="panels"] [class*="avatar"] img {
+[class*="panels"] [class*="avatar"] img,
+div[class*="panels"] > div [class*="avatar"],
+div[class*="panels"] > div > div [class*="avatar"],
+div[class*="panels"] > div > div > div [class*="avatar"],
+[class*="panels"] [class*="container"] [class*="avatar"],
+[class*="panels"] [class*="wrapper"] [class*="avatar"] {
     background: transparent !important;
     background-color: transparent !important;
+    opacity: 1 !important;
+    filter: none !important;
 }
 
 /* Exception pour la bannière - permet l'affichage normal */
 [class*="panels"] [class*="banner"],
 [class*="panels"] [class*="Banner"],
 [class*="panels"] [class*="background"],
-[class*="panels"] [class*="bannerImage"] {
+[class*="panels"] [class*="bannerImage"],
+div[class*="panels"] > div [class*="banner"],
+div[class*="panels"] > div > div [class*="banner"],
+[class*="panels"] [class*="container"] [class*="banner"] {
     background: transparent !important;
     background-color: transparent !important;
     filter: none !important;
     opacity: 1 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
 }
 
 /* Cible spécifiquement les zones de connexion vocale et de profil */

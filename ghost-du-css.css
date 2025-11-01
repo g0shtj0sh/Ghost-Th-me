@@ -87,43 +87,43 @@ body {
     }
 
     /* Force tous les éléments internes du panel utilisateur à utiliser --bg-3 */
-    .panels__5e434 > *,
-    .panels__5e434 [class*="container"],
-    .panels__5e434 [class*="wrapper"],
-    .panels__5e434 [class*="flex"],
-    .panels__5e434 [class*="item"],
-    .panels__5e434 [class*="button"],
-    .panels__5e434 [class*="buttonContainer"],
-    .panels__5e434 [class*="buttonWrapper"],
-    .panels__5e434 [class*="activity"],
-    .panels__5e434 [class*="profile"],
-    .panels__5e434 [class*="username"],
-    .panels__5e434 [class*="name"],
-    .panels__5e434 [class*="customStatus"],
-    .panels__5e434 [class*="subtext"],
-    .panels__5e434 [class*="panel"],
-    .panels__5e434 [class*="actions"],
-    .panels__5e434 [class*="nameTag"],
-    .panels__5e434 [class*="info"],
-    .panels__5e434 [class*="badge"],
-    .panels__5e434 [class*="status"],
-    .panels__5e434 [class*="connection"],
-    .panels__5e434 [class*="voice"],
-    .panels__5e434 [class*="listening"],
-    .panels__5e434 [class*="spotify"],
-    .panels__5e434 [class*="activityPanel"],
-    .panels__5e434 [class*="activityPanelText"],
-    .panels__5e434 [class*="activityPanelBody"],
-    .panels__5e434 [class*="activityPanelButton"],
-    .panels__5e434 [class*="activityPanelBar"],
-    .panels__5e434 [class*="activityPanelIcon"],
-    .panels__5e434 [class*="activityPanelTitle"],
-    .panels__5e434 [class*="activityPanelContent"],
-    .panels__5e434 [class*="activityPanelDescription"],
-    .panels__5e434 [class*="activityPanelDetails"],
-    .panels__5e434 > div,
-    .panels__5e434 > div > div,
-    .panels__5e434 > div > div > div {
+    .panels__5e434 > *:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="container"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="wrapper"]:not([class*="avatarWrapper"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="flex"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="item"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="button"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="buttonContainer"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="buttonWrapper"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activity"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="profile"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="username"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="name"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="customStatus"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="subtext"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="panel"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="actions"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="nameTag"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="info"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="badge"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="status"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="connection"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="voice"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="listening"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="spotify"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanel"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelText"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelBody"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelButton"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelBar"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelIcon"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelTitle"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelContent"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelDescription"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 [class*="activityPanelDetails"]:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 > div:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 > div > div:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]),
+    .panels__5e434 > div > div > div:not([class*="avatar"]):not([class*="banner"]):not([class*="Banner"]) {
         background-color: var(--bg-3) !important;
         background: var(--bg-3) !important;
         border-radius: 0 !important;
@@ -132,21 +132,36 @@ body {
     /* Exception pour l'avatar - permet l'affichage de la photo de profil */
     .panels__5e434 [class*="avatar"],
     .panels__5e434 [class*="avatar"] > *,
-    .panels__5e434 [class*="avatarWrapper"] > [class*="avatar"],
+    .panels__5e434 [class*="avatarWrapper"],
+    .panels__5e434 [class*="avatarWrapper"] > *,
+    .panels__5e434 [class*="avatarWrapper"] [class*="avatar"],
     .panels__5e434 img[class*="avatar"],
-    .panels__5e434 [class*="avatar"] img {
+    .panels__5e434 [class*="avatar"] img,
+    .panels__5e434 > div [class*="avatar"],
+    .panels__5e434 > div > div [class*="avatar"],
+    .panels__5e434 > div > div > div [class*="avatar"],
+    .panels__5e434 [class*="container"] [class*="avatar"],
+    .panels__5e434 [class*="wrapper"] [class*="avatar"] {
         background: transparent !important;
         background-color: transparent !important;
+        opacity: 1 !important;
+        filter: none !important;
     }
     
     /* Exception pour la bannière - permet l'affichage normal */
     .panels__5e434 [class*="banner"],
     .panels__5e434 [class*="Banner"],
-    .panels__5e434 [class*="background"] {
+    .panels__5e434 [class*="background"],
+    .panels__5e434 [class*="bannerImage"],
+    .panels__5e434 > div [class*="banner"],
+    .panels__5e434 > div > div [class*="banner"],
+    .panels__5e434 [class*="container"] [class*="banner"] {
         background: transparent !important;
         background-color: transparent !important;
         filter: none !important;
         opacity: 1 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
     }
     
     /* Assure que le premier élément enfant respecte le border-radius du panel */
