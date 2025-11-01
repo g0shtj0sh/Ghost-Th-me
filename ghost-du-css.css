@@ -61,6 +61,8 @@ body {
         backdrop-filter: var(--panel-backdrop-filter);
         box-sizing: border-box;
         transition: border-color var(--border-hover-transition);
+        contain: layout style paint;
+        will-change: border-color;
 
         &:hover {
             border-color: var(--border-hover);
@@ -84,6 +86,10 @@ body {
         box-sizing: border-box !important;
         transition: border-color var(--border-hover-transition) !important;
         overflow: hidden !important;
+        contain: layout style paint;
+        will-change: border-color;
+        backface-visibility: hidden;
+        transform: translateZ(0);
 
         &:hover {
             border-color: var(--border-hover) !important;
@@ -227,14 +233,19 @@ body {
         background-repeat: no-repeat !important;
         overflow: hidden !important;
         box-sizing: border-box !important;
+        contain: layout style paint;
+        will-change: transform;
+        backface-visibility: hidden;
     }
     
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
         top: 50% !important;
         left: 50% !important;
-        transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) translateZ(0) !important;
         width: 65% !important;
         height: 65% !important;
+        will-change: transform;
+        backface-visibility: hidden;
     }
     
     .folderGroup__48112 {
