@@ -71,7 +71,7 @@ body {
         position: absolute !important;
         bottom: var(--gap) !important;
         left: calc(72px + var(--gap)) !important;
-        right: 0 !important;
+        right: calc(var(--gap) * 2) !important;
         width: auto !important;
         margin: 0 !important;
         padding: 0 !important;
