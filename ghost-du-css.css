@@ -71,8 +71,9 @@ body {
         position: absolute !important;
         bottom: var(--gap) !important;
         left: calc(72px + var(--gap)) !important;
-        right: calc(var(--gap) * 2) !important;
-        width: auto !important;
+        width: calc(240px - var(--gap)) !important;
+        max-width: calc(240px - var(--gap)) !important;
+        right: auto !important;
         margin: 0 !important;
         padding: 0 !important;
         background-color: var(--bg-3) !important;
