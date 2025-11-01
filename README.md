@@ -90,7 +90,7 @@ Il transforme ton interface en un sanctuaire spectral — minimaliste, raffiné,
 
 ## 🖼️ Aperçu
 
-![Aperçu Ghost](https://github.com/g0shtj0sh/Ghost-Th-me/blob/72a1c939d0bb3d7274674b562e24dd6edb7453a0/Preview.png)
+![Aperçu Ghost](https://github.com/g0shtj0sh/Ghost-Th-me/blob/6f75b84162a536605a4b992a9e3625963275e98d/Preview.png)
 
 ---
 
