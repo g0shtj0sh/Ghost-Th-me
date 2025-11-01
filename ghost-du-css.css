@@ -76,6 +76,13 @@ body {
         -webkit-backdrop-filter: none !important;
         opacity: 1 !important;
         border-radius: 0 !important;
+        border: var(--border-thickness) solid var(--border-subtle);
+        box-sizing: border-box;
+        transition: border-color var(--border-hover-transition);
+
+        &:hover {
+            border-color: var(--border-hover);
+        }
     }
 
     /* Force tous les éléments internes du panel utilisateur à utiliser --bg-3 */
